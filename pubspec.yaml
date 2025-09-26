@@ -11,9 +11,9 @@ dependencies:
   flutter:
     sdk: flutter
   
-  cupertino_icons: ^1.0.8
-  loading_animation_widget: ^1.2.0
-  google_fonts: ^6.2.1
+#  cupertino_icons: ^1.0.8
+#  loading_animation_widget: ^1.2.0
+#  google_fonts: ^6.2.1
   # firebase_core: ^3.5.0
   # firebase_auth: ^5.3.0
   # cloud_firestore: ^5.4.0
@@ -34,4 +34,21 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/logo.png
+    - assets/images
+
+  fonts:
+    - family: Urbanist
+      fonts:
+        - asset: assets/fonts/Urbanist-Regular.tff
+        - asset: assets/fonts/Urbanist-Thin.tff
+          weight: 100
+        - asset: assets/fonts/Urbanist-Light.tff
+          weight: 300
+        - asset: assets/fonts/Urbanist-Medium.tff
+          weight: 500
+        - asset: assets/fonts/Urbanist-SemiBold.tff
+          weight: 600
+        - asset: assets/fonts/Urbanist-Bold.tff
+          weight: 700
+        - asset: assets/fonts/Urbanist-ExtraBold.tff
+          weight: 800
