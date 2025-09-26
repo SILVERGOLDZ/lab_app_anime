@@ -1,7 +1,7 @@
+import 'package:dompetku/screens/signin_screen.dart';
 import 'package:flutter/material.dart';
 // import 'package:firebase_core/firebase_core.dart';
 // import 'firebase_options.dart'; // otomatis dibuat sama flutterfire configure
-import 'pages/splash/splash_screen.dart';
 
 Future<void> main() async {
   // Pastikan binding Flutter ready
@@ -21,14 +21,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'DompetKU',
+      title: 'ANIME APP',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 196, 194, 200)),
-        useMaterial3: true,
+        fontFamily: 'Urbanist',
       ),
-      // SplashScreen jadi halaman awal
-      home: const SplashScreen(),
+      home: const SignInScreen(),
     );
   }
 }
