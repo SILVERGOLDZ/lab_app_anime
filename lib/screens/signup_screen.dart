@@ -1,16 +1,16 @@
+import 'package:anime_verse/widgets/app_scaffold.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import '../widgets/app_scaffold.dart';
+import 'package:flutter_svg/svg.dart';
 
-class SignInScreen extends StatelessWidget {
-  const SignInScreen({super.key});
+class SignUpScreen extends StatelessWidget {
+  const SignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
 
-    return  AppScaffold(
+    return AppScaffold(
       body: LayoutBuilder(
         builder: (context, constraints) {
           final isLargeScreen = constraints.maxWidth > 600;
@@ -30,9 +30,9 @@ class SignInScreen extends StatelessWidget {
 
                     SizedBox(height: screenHeight * 0.04),
 
-                    // Signin Title
+                    // Signup Title
                     Text(
-                      'Welcome Back!',
+                      'Join AnimeVerse!',
                       style: TextStyle(
                         fontSize: screenWidth * (isLargeScreen ? 0.06 : 0.1),
                         fontWeight: FontWeight.w800,
@@ -44,11 +44,11 @@ class SignInScreen extends StatelessWidget {
                     SizedBox(height: screenHeight * 0.01),
 
                     Text(
-                      'Sign in to continue your anime journey',
+                      'Create your account and start exploring',
                       style: TextStyle(
                         fontSize: screenWidth * 0.035,
-                        fontWeight: FontWeight.w500,
                         color: Colors.white70,
+                        fontWeight: FontWeight.w500,
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -124,34 +124,15 @@ class SignInScreen extends StatelessWidget {
                       obscureText: true,
                     ),
 
-                    SizedBox(height: screenHeight * 0.01),
-
-                    // Forgot Password
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: TextButton(
-                        child: Text(
-                          'Forgot Password?',
-                          style: TextStyle(
-                            fontSize: screenWidth * 0.035,
-                            color: Colors.blue.shade300,
-                          ),
-                        ),
-                        onPressed: () {
-                          // TODO: Implement forgot password functionality
-                        },
-                      ),
-                    ),
-
                     SizedBox(height: screenHeight * 0.03),
 
-                    // Sign In Button
+                    // Sign Up Button
                     SizedBox(
                       width: double.infinity,
                       height: screenHeight * 0.075,
                       child: ElevatedButton(
                           onPressed: () {
-                            // TODO: Implement sign in functionality
+                            // TODO: Implement sign up functionality
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.blue.withValues(alpha: 0.8),
@@ -162,7 +143,7 @@ class SignInScreen extends StatelessWidget {
                             elevation: 5,
                           ),
                           child: Text(
-                            'Sign In',
+                            'Sign Up',
                             style: TextStyle(
                               fontSize: screenWidth * 0.045,
                               fontWeight: FontWeight.w600,
@@ -203,7 +184,7 @@ class SignInScreen extends StatelessWidget {
 
                     SizedBox(height: screenHeight * 0.03),
 
-                    // Sign in with Google
+                    // Sign up with Google
                     SizedBox(
                       width: double.infinity,
                       height: screenHeight * 0.075,
@@ -240,12 +221,12 @@ class SignInScreen extends StatelessWidget {
 
                     SizedBox(height: screenHeight * 0.04),
 
-                    // Sign up link
+                    // Sign in link
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          "Don't have an account? ",
+                          'Already have an account? ',
                           style: TextStyle(
                             fontSize: screenWidth * 0.04,
                             color: Colors.white70,
@@ -253,10 +234,10 @@ class SignInScreen extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {
-                            // TODO: Navigate to sign up screen
+                            // TODO: Navigate to sign in screen
                           },
                           child: Text(
-                            'Sign Up',
+                            'Sign In',
                             style: TextStyle(
                               fontSize: screenWidth * 0.04,
                               fontWeight: FontWeight.w600,
@@ -273,8 +254,8 @@ class SignInScreen extends StatelessWidget {
               ),
             ),
           );
-      }
-      )
+        },
+      ),
     );
   }
 }

@@ -1,17 +1,7 @@
-import 'package:dompetku/screens/signin_screen.dart';
+import 'package:anime_verse/screens/signin_screen.dart';
 import 'package:flutter/material.dart';
-// import 'package:firebase_core/firebase_core.dart';
-// import 'firebase_options.dart'; // otomatis dibuat sama flutterfire configure
 
-Future<void> main() async {
-  // Pastikan binding Flutter ready
-  WidgetsFlutterBinding.ensureInitialized();
-
-  // Inisialisasi Firebase
-  // await Firebase.initializeApp(
-  //   options: DefaultFirebaseOptions.currentPlatform,
-  // );
-
+void main() {
   runApp(const MyApp());
 }
 
@@ -21,12 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ANIME APP',
-      debugShowCheckedModeBanner: false,
+      title: 'AnimeVerse',
       theme: ThemeData(
         fontFamily: 'Urbanist',
       ),
       home: const SignInScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

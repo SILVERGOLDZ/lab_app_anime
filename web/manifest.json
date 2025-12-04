@@ -1,6 +1,6 @@
 {
-    "name": "lab",
-    "short_name": "lab",
+    "name": "anime_verse",
+    "short_name": "anime_verse",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

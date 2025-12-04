@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example.lab" "\0"
-            VALUE "FileDescription", "lab" "\0"
+            VALUE "CompanyName", "com.example" "\0"
+            VALUE "FileDescription", "anime_verse" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "lab" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2025 com.example.lab. All rights reserved." "\0"
-            VALUE "OriginalFilename", "lab.exe" "\0"
-            VALUE "ProductName", "lab" "\0"
+            VALUE "InternalName", "anime_verse" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
+            VALUE "OriginalFilename", "anime_verse.exe" "\0"
+            VALUE "ProductName", "anime_verse" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
