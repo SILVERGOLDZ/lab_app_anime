@@ -1,12 +1,12 @@
 # Identitas Mahasiswa
-Nama : Steven Girsang
-NIM : 231401059
-Kelas : Lab 3
+- **Nama** : Steven Girsang
+- **NIM** : 231401059
+- **Kelas** : Lab 3
 
-##Deskripsi Aplikasi
+## Deskripsi Aplikasi
 Anime verse merupakan sebuah aplikasi yang menampilkan berbagai anime dari internet sekaligus memaparkan detail dari sebuah anime, seperti: synopsis, mal rating, total episode, dan genre.
 
-##Screenshots
+## Screenshots
 
 | Splash Screen | Sign In | Sign Up |
 | :---: | :---: | :---: |
@@ -34,5 +34,5 @@ Anime verse merupakan sebuah aplikasi yang menampilkan berbagai anime dari inter
 - View anime detail
 - Change Password
 
-#Demo
+# Demo
 Youtube : **[Video Link](https://youtu.be/wQRJppZvvUM)**
